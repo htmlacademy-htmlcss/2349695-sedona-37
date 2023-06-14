@@ -13,13 +13,38 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
+html {
+  height: 100%;
+}
  body {
+  margin:0;
+  display:flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: 'PT Sans', sans-serif;
   font-size: 22px;
   line-height: 26px;
   background-color: #FFFFFF;
   color: #000000;
  }
+.page-container {
+  margin: 0 auto;
+  width:1200px;
+}
+.main-nav {
+  display:flex;
+  width:1200px;
+}
+.nav-list {
+  margin:0;
+  padding: 0;
+  list-style: none;
+  width:530px;
+}
+.nav-user {
+  width:290px;
+  margin-left: auto;
+}
  .nav-link {
   font-weight: 700;
   font-size: 20px;
@@ -28,7 +53,7 @@
   text-decoration: none;
   color:#000000;
  }
- .nav-user {
+ .nav-here {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -38,6 +63,9 @@
   text-transform: uppercase;
   text-decoration: none;
  }
+.main-container {
+  flex-grow: 1;
+ }
 .hero {
   background-image: url("../images/index-background.jpg");
   background-color: #000000;
@@ -46,6 +74,10 @@
   background-position: center bottom;
   text-align:center;
 }
+.hero-img {
+  display: block;
+  margin: 0 auto;
+}
 .title {
   font-weight: 700;
   font-size: 30px;
@@ -53,10 +85,27 @@
   text-align: center;
   text-transform: uppercase;
 }
+.benefits-list {
+  margin:0;
+  padding: 0;
+  list-style: none;
+  display:flex;
+  flex-wrap: wrap;
+}
 .benefits-description {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+}
+.benefits-item {
+  width:400px;
+}
+.benefits-item-img {
+  width:800px;
+}
+.benefits-img {
+  display:block;
+  margin:0;
 }
 .benefits-item h3 {
   font-weight: 700;
@@ -79,6 +128,16 @@
 }
 .light-blue {
   background-color: rgba(131, 179, 211, 0.12);
+}
+.services-list {
+  margin:0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.services-item {
+  width:400px;
 }
 .services-description {
   font-size: 22px;
@@ -144,6 +203,20 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  width:1200px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.contacts-list {
+  margin:0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  width:160px;
+}
 .contacts-phone {
   font-size: 40px;
   line-height: 40px;
@@ -151,7 +224,12 @@
   text-transform: uppercase;
   text-decoration: none;
   color:#000000;
+  width:335px;
 }
+.htmlacademy-link {
+  width:115px;
+}
+/*Почему вылезла ссылка за край?*/
 
 /*Стили для catalog.html*/
 
