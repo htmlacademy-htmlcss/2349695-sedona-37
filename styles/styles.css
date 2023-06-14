@@ -40,6 +40,7 @@ html {
   padding: 0;
   list-style: none;
   width:530px;
+  display:flex;
 }
 .nav-user {
   width:290px;
@@ -217,6 +218,9 @@ html {
   display: flex;
   width:160px;
 }
+.contacts-item {
+  width:48px;
+}
 .contacts-phone {
   font-size: 40px;
   line-height: 40px;
@@ -248,12 +252,26 @@ html {
 .breadcrumbs {
   font-size: 16px;
   line-height: 21px;
+  display:flex;
+  margin:0;
+  padding:0;
+  list-style: none;
 }
 .hotel-filter-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
+}
+.appearance {
+  margin: 0;
+  padding:0;
+  list-style: none;
+  display:flex;
+  width:160px;
+}
+.appearance-item {
+  width:48px;
 }
 .control {
   font-size: 18px;
@@ -280,6 +298,17 @@ html {
 .select-control {
   font-size: 18px;
   line-height: 21px;
+}
+.hotel-cards-list {
+  margin: 0;
+  padding:0;
+  list-style: none;
+  display:flex;
+  flex-wrap: wrap;
+}
+.hotel-cards-item {
+  width:340px;
+  margin-right:20px;
 }
 .hotel-cards-link {
   font-weight: 700;
@@ -311,6 +340,16 @@ html {
 .button-raiting {
   font-weight: 400;
   background-color: #F2F2F2;
+}
+.pagination {
+  margin: 0;
+  padding:0;
+  list-style: none;
+  display:flex;
+  width:1060px;
+}
+.pagination-item {
+  width:60px;
 }
 .pagination-link {
   font-weight: 700;

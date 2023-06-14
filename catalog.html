@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="page-container">
     <header class="page-header">
       <nav class="main-nav">
         <a class="nav-logo">
@@ -22,19 +23,19 @@
             <a class="nav-link nav-link-current" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="nav-list">
+        <ul class="nav-list nav-user">
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-user" href="#">
+            <a class="nav-link" href="#">
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link button" href="#">Хочу сюда!</a>
+            <a class="nav-link nav-here" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -52,7 +53,7 @@
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
-        <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+        <h2 hidden class="visually-hidden">Список гостиниц с фильтрами</h2>
         <form class="hotel-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="hotel-filter-group">
             <legend class="hotel-filter-title">Инфраструктура</legend>
@@ -103,7 +104,7 @@
         </form>
       </header>
       <section class="hotel-cards">
-        <h2 class="visually-hidden">Список гостиниц</h2>
+        <h2 hidden class="visually-hidden">Список гостиниц</h2>
         <p class="hotels-cards-text">Найдено гостиниц: 38</p>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала дешевые</option>
@@ -268,7 +269,7 @@
         </form>
       </section>
       <section class="contacts">
-        <h2 class="visually-hidden">Социальные сети</h2>
+        <h2 hidden class="visually-hidden">Социальные сети</h2>
         <ul class="contacts-list">
           <li class="contacts-item">
             <a class="contacts-link" href="https://vk.com/htmlacademy">
@@ -292,5 +293,6 @@
         </a>
       </section>
     </footer>
+    </div>
   </body>
 </html>
