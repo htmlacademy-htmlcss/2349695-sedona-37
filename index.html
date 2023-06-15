@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="page-container">
     <header class="page-header">
       <nav class="main-nav">
         <a class="nav-logo" href="#">
@@ -22,7 +23,7 @@
             <a class="nav-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="nav-list">
+        <ul class="nav-list nav-user">
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span class="visually-hidden">Поиск</span>
@@ -34,26 +35,26 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-user" href="#">Хочу сюда!</a>
+            <a class="nav-link nav-here" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main-index">
+    <main class="main-container main-index">
       <section class="hero">
-        <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+        <h1 hidden class="visually-hidden">Добро пожаловать в Седону</h1>
         <img class="hero-img" src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona.">
       </section>
       <section class="benefits">
         <h2 class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="benefits-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="benefits-list">
-          <li class="benefits-item">
+          <li class="benefits-item benefits-item-img">
             <img class="benefits-img" src="images/photo-index-1.jpg" width="800" height="385" alt="Здания города Седоны.">
-            <div class="benefits-text">
+          </li>
+          <li class="benefits-item benefits-text">
             <h3 class="benefits-title">Настоящий городок</h3>
             <p class="benefits-reasons">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            </div>
           </li>
           <li class="benefits-item light-blue">
             <h3 class="benefits-title">Небольшая площадь</h3>
@@ -67,11 +68,11 @@
             <h3 class="benefits-title">Мало туристов</h3>
             <p class="benefits-reasons">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-          <li class="benefits-item">
-            <div class="benefits-text">
+          <li class="benefits-item benefits-text">
             <h3 class="benefits-title">Там есть мост дьявола</h3>
             <p class="benefits-reasons">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            </div>
+          </li>
+          <li class="benefits-item benefits-item-img">
             <img class="benefits-img" src="images/photo-index-2.jpg" width="800" height="385" alt="Красивые виды на красные скалы Седоны.">
           </li>
         </ul>
@@ -110,7 +111,7 @@
         </form>
       </section>
       <section class="contacts">
-        <h2 class="visually-hidden">Социальные сети</h2>
+        <h2 hidden class="visually-hidden">Социальные сети</h2>
         <ul class="contacts-list">
           <li class="contacts-item">
             <a class="contacts-link" href="https://vk.com/htmlacademy">
@@ -134,5 +135,6 @@
         </a>
       </section>
     </footer>
+    </div>
   </body>
 </html>
