@@ -49,6 +49,7 @@ html {
 }
 .logo {
   display: block;
+  margin:0;
 }
 .nav-list {
   margin:0;
@@ -127,7 +128,6 @@ html {
   line-height: 26px;
   text-align: center;
   color: #333333;
-
 }
 .benefits-list {
   margin:0;
@@ -341,6 +341,10 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   color:#FFFFFF;
+  padding-top: 35px;
+  padding-left:70px;
+  padding-right:70px;
+  padding-bottom:70px;
 }
 .inner-header-title {
   font-weight: 700;
@@ -356,26 +360,19 @@ html {
   margin:0;
   padding:0;
   list-style-type: none;
+  margin-bottom:40px;
+}
+.hotel-filter {
+  display:flex;
+}
+hotel-filter-group {
+  width:151px;
 }
 .hotel-filter-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
-}
-.appearance {
-  margin: 0;
-  padding:0;
-  list-style-type: none;
-  display:flex;
-  width:160px;
-}
-.appearance-item {
-  width:48px;
-}
-.control {
-  font-size: 18px;
-  line-height: 23px;
 }
 .filter-button {
   font-weight: 700;
@@ -389,26 +386,82 @@ html {
 .filter-button-submit {
   background-color: #82B3D3;;
 }
+.buttons {
+  display:flex;
+  flex-direction:column;
+}
+.hotel-cards {
+  box-sizing: border-box;
+  padding-top:50px;
+  padding-bottom:60px;
+  padding-left:70px;
+  padding-right:70px;
+}
+.control {
+  font-size: 18px;
+  line-height: 23px;
+}
+.hotel-search {
+  display:flex;
+  width:1060px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:40px;
+}
 .hotels-cards-text {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  width:338px;
+  margin:0;
+  margin-bottom:40px;
 }
 .select-control {
   font-size: 18px;
   line-height: 21px;
+  width:292px;
 }
-.hotel-cards-list {
+.appearance {
   margin: 0;
   padding:0;
   list-style-type: none;
   display:flex;
+  max-width:200px;
+}
+.appearance-item {
+  width:48px;
+}
+.hotel-cards-list {
+  display:flex;
   flex-wrap: wrap;
+  margin:0;
+  padding:0;
+  list-style-type: none;
+  margin-bottom: 80px;
 }
 .hotel-cards-item {
-  width:340px;
+  display:flex;
+  align-items: flex-start;
+  flex-direction:column;
+  box-sizing: border-box;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
   margin-right:20px;
+  margin-bottom:20px;
+  padding:20px;
+}
+.hotel-cards-item:last-child {
+  margin-right: 0;
+}
+.hotel-cards-img {
+  display:block;
+  margin:0;
+  margin-bottom:16px;
+}
+.hotel-cards-title {
+  margin-bottom:16px;
+  width:300px;
 }
 .hotel-cards-link {
   font-weight: 700;
@@ -420,6 +473,33 @@ html {
 .price-text {
   font-size: 18px;
   line-height: 21px;
+  width:300px;
+  display:flex;
+  justify-content: space-between;
+  margin:0;
+  margin-bottom:16px;
+}
+.hotel-buttons {
+  width:300px;
+  display:flex;
+  justify-content: space-between;
+  margin-bottom:16px;
+}
+.raiting {
+  width:300px;
+  display:flex;
+  justify-content: space-between;
+}
+.stars-list {
+  margin:0;
+  padding:0;
+  list-style-type: none;
+  display:flex;
+  align-items: center;
+}
+.star-img {
+  display:block;
+  margin: 0;
 }
 .button-cards {
   font-weight: 700;
@@ -450,16 +530,29 @@ html {
 }
 .pagination-item {
   width:60px;
+  margin-right: 8px;
+}
+.pagination-item:last-child {
+  margin-right: 0;
 }
 .pagination-link {
+  display:block;
+  box-sizing: border-box;
+  width:60px;
+  height:60px;
+  padding:13px 25px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-align: center;
+  align-items: center;
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #82B3D3;
   text-decoration: none;
+}
+.ten {
+  padding: 13px 19px;
 }
 .pagination-current {
   color:#000000;
@@ -472,10 +565,26 @@ html {
 .newsletter-inner {
   background-color: #FFFFFF;
   text-align: center;
+  padding-top:96px;
+  padding-bottom: 104px;
+  padding-left: 258px;
+  padding-right: 258px;
 }
-.newsletter-title-inner {
-  color: #000000;
+.newsletter-inner h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;;
+  width:404px;
+  margin:0 auto;
+  margin-bottom: 20px;
 }
 .newsletter-description-inner {
-  color: #000000;
+  color: #333333;
+  font-size: 22px;
+  line-height: 26px;
+  width:475px;
+  margin: 0 auto;
+  margin-bottom:54px;
 }
