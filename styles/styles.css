@@ -22,26 +22,42 @@ html {
   font-family: 'PT Sans', sans-serif;
   font-size: 22px;
   line-height: 26px;
-  background-color: #FFFFFF;
+  background-color: #F2F2F2;
   color: #000000;
  }
+ .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .page-container {
   margin: 0 auto;
   width:1200px;
   min-height: 100%;
   display:flex;
   flex-direction: column;
+  background-color: #FFFFFF;
 }
 .main-nav {
   display:flex;
-  width:1200px;
+  width:1020px;
+}
+.logo {
+  display: block;
 }
 .nav-list {
   margin:0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
   width:530px;
   display:flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .nav-user {
   width:290px;
@@ -54,7 +70,13 @@ html {
   text-transform: capitalize;
   text-decoration: none;
   color:#000000;
+  display: block;
+  padding: 20px 16px;
  }
+ .nav-user .nav-link {
+  min-width: 16px;
+  min-height: 22px;
+}
  .nav-here {
   font-weight: 700;
   font-size: 16px;
@@ -64,9 +86,13 @@ html {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  display: block;
+  padding: 8px 34px;
  }
 .main-container {
   flex-grow: 1;
+  margin: 0;
+  padding: 0;
  }
 .hero {
   background-image: url("../images/index-background.jpg");
@@ -79,31 +105,47 @@ html {
 .hero-img {
   display: block;
   margin: 0 auto;
+  padding-top:51px;
+  padding-bottom: 82px;
 }
-.title {
+.benefits h2 {
+  width:620px;
+  margin:0 auto;
+  padding-top:69px;
+  margin-bottom:25px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
 }
-.benefits-list {
-  margin:0;
-  padding: 0;
-  list-style: none;
-  display:flex;
-  flex-wrap: wrap;
-}
 .benefits-description {
+  width: 651px;
+  margin: 0 auto;
+  margin-bottom: 90px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  color: #333333;
+
+}
+.benefits-list {
+  margin:0;
+  padding: 0;
+  list-style-type: none;
+  display:flex;
+  flex-wrap: wrap;
 }
 .benefits-item {
+  box-sizing: border-box;
   width:400px;
+  padding: 102px 85px;
+  text-align:center;
 }
 .benefits-item-img {
+  box-sizing: border-box;
   width:800px;
+  padding:0;
 }
 .benefits-img {
   display:block;
@@ -115,15 +157,26 @@ html {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
+  width:175px;
+  margin:0 auto;
+  margin-bottom:62px;
 }
-.benefits-item p {
+.benefits-reasons {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  margin:0;
+  color: #333333;
 }
 .benefits-text {
   color:#FFFFFF;
   background-color: #82B3D3;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+.benefits-text p {
+  margin:0;
 }
 .blue {
   background-color: rgba(131, 179, 211, 0.2);
@@ -131,20 +184,36 @@ html {
 .light-blue {
   background-color: rgba(131, 179, 211, 0.12);
 }
-.services-list {
-  margin:0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-}
-.services-item {
-  width:400px;
+.services h2 {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  width:505px;
+  padding-top:64px;
+  margin: 0 auto;
+  margin-bottom:20px;
 }
 .services-description {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  width:490px;
+  margin:0 auto;
+  margin-bottom:64px;
+  color: #333333;
+}
+.services-list {
+  margin:0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.services-item {
+  box-sizing: border-box;
+  width:400px;
+  padding:81px 85px;
 }
 .services-item h3 {
   font-weight: 700;
@@ -157,13 +226,28 @@ html {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  margin:0;
+  color: #333333;
 }
 .search {
   text-align: center;
 }
+.search h2 {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  width:297px;
+  padding-top:96px;
+  margin:0 auto;
+  margin-bottom: 20px;
+}
 .search-description {
   font-size: 22px;
   line-height: 26px;
+  width:592px;
+  margin: 0 auto;
+  margin-bottom:54px;
+  color: #333333;
 }
 .search-button {
   font-family: inherit;
@@ -174,25 +258,34 @@ html {
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 8px 50px;
+  margin-bottom:96px;
 }
 .newsletter {
   background-image: url("../images/subscribe-background.jpg");
   background-color: #000000;
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
 }
-.newsletter-title {
+.newsletter h2 {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   color: #FFFFFF;
+  width:404px;
+  padding-top:96px;
+  margin:0 auto;
+  margin-bottom: 20px;
 }
 .newsletter-description {
   font-size: 22px;
   line-height: 26px;
   color: #FFFFFF;
+  width:475px;
+  margin: 0 auto;
+  margin-bottom:54px;
 }
 .submit-button {
   font-family: inherit;
@@ -204,20 +297,25 @@ html {
   background-color: #82B3D3;;
   text-decoration: none;
   text-transform: uppercase;
+  margin-bottom:104px;
 }
 .contacts {
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  width:1200px;
   padding-left: 70px;
   padding-right: 70px;
+  padding-top:40px;
+  padding-bottom:30px;
 }
 .contacts-list {
   margin:0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   width:160px;
+  align-items: center;
 }
 .contacts-item {
   width:48px;
@@ -234,14 +332,13 @@ html {
 .htmlacademy-link {
   width:115px;
 }
-/*Почему вылезла ссылка за край?*/
 
 /*Стили для catalog.html*/
 
 .inner-header {
   background-image: url("../images/filter-background.jpg");
   background-color: #000000;
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   color:#FFFFFF;
 }
@@ -249,6 +346,8 @@ html {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin-top:0;
+  margin-bottom:8px;
 }
 .breadcrumbs {
   font-size: 16px;
@@ -256,7 +355,7 @@ html {
   display:flex;
   margin:0;
   padding:0;
-  list-style: none;
+  list-style-type: none;
 }
 .hotel-filter-title {
   font-weight: 700;
@@ -267,7 +366,7 @@ html {
 .appearance {
   margin: 0;
   padding:0;
-  list-style: none;
+  list-style-type: none;
   display:flex;
   width:160px;
 }
@@ -303,7 +402,7 @@ html {
 .hotel-cards-list {
   margin: 0;
   padding:0;
-  list-style: none;
+  list-style-type: none;
   display:flex;
   flex-wrap: wrap;
 }
@@ -345,7 +444,7 @@ html {
 .pagination {
   margin: 0;
   padding:0;
-  list-style: none;
+  list-style-type: none;
   display:flex;
   width:1060px;
 }
