@@ -427,7 +427,7 @@ html {
   text-decoration: none;
   text-transform: uppercase;
   border:none;
-  border-radius: 4px;
+  border-radius: 0 4px 4px 0;
   cursor: pointer;
 }
 .submit-button:hover {
@@ -566,7 +566,199 @@ html {
   text-transform: uppercase;
   color: #000000;
 }
-
+.search-form {
+  display:flex;
+  flex-wrap: wrap;
+}
+.search-form .field-group {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 23px;
+}
+.field {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  color: #000000;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.data-field {
+  width:400px;
+  padding: 12px 20px;
+  background-image: url("../images/data.svg") ;
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+}
+.search-label {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+.modal-error {
+  font-size: 16px;
+  line-height: 21px;
+  color: #FF5757;
+  padding: 0 20px;
+  margin-left: 137px;
+  margin-top: 4px;
+}
+.modal-available {
+  font-size: 16px;
+  line-height: 21px;
+  margin-left: 137px;
+  margin-top: 4px;
+  padding: 0 20px;
+}
+.people-number {
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:48px;
+}
+.field::-webkit-outer-spin-button,
+.field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+.people-field {
+  width:11px;
+  padding: 14px 10px;
+  text-align:center;
+  border-radius: 0;
+  line-height: 20px;
+}
+.people-number .search-label {
+  margin-right: 46px;
+  max-width: 95px;
+}
+.field-group-children .search-label {
+  margin-right: 82px;
+}
+.field-group-adult,
+.field-group-children {
+  margin-bottom: 0;
+}
+.number-button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 40px;
+  height: 48px;
+  padding: 14px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #f2f2f2;
+}
+.less {
+  border-radius: 4px 0 0 4px;
+}
+.more {
+  border-radius: 0 4px 4px 0;
+}
+.number-button:hover path {
+  fill: #000;
+  fill-opacity: 1;
+}
+.number-button:focus svg{
+  outline: 3px solid #83b3d3;
+  border-radius: 4px;
+}
+.number-button:active path{
+  fill: #000000;
+  fill-opacity: 0.3;
+}
+.tooltip {
+  position: absolute;
+  margin-left: 59px;
+  margin-top: 1px;
+  width: 26px;
+  height: 26px;
+}
+.tooltip-toggle {
+  border: none;
+  padding: 0;
+  margin: 0;
+  padding:7px 12px;
+  border-radius: 50%;
+  background-color: #83B3D3;
+  display: block;
+  cursor: pointer;
+}
+.tooltip-toggle:hover {
+  opacity: 0.6;
+}
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  color: #FFFFFF;
+  display: block;
+}
+.tooltip-text {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  font-style: normal;
+  padding: 15px 18px 18px 22px;
+  border-radius: 10px;
+  display: block;
+  width: 216px;
+  position: absolute;
+  top: 100%;
+  margin-top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: none;
+}
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+.tooltip-text:after {
+  content:'';
+  background-image: url("../images/triangle-tooltip.svg");
+  width: 19px;
+  height: 9px;
+  position:absolute;
+  bottom: 100%;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal-search-button {
+  width: 100%;
+  border: none;
+  margin: 0;
+  padding: 18px 77px;
+  background-color: #82b3d3;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+}
+.modal-container-close {
+  display: none;
+}
 /*Стили для catalog.html*/
 
 .inner-header {
@@ -682,6 +874,9 @@ html {
 }
 .control:active {
   opacity:0.3;
+}
+.control-input:focus + .control-mark {
+  outline: 3px solid #83b3d3;
 }
 .control-input[type="checkbox"]:checked + .control-mark {
   background-image: url("../images/checkbox.svg");
