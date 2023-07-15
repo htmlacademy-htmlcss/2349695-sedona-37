@@ -61,12 +61,19 @@ html {
   margin-bottom: -6px;
   display:block;
 }
+.nav-logo:hover {
+  opacity: 0.6;
+}
+.nav-logo:active {
+  opacity: 0.3;
+}
 .logo {
   display: block;
   margin:0;
   width: 140px;
   height: 70px;
 }
+
 .nav-list {
   margin:0;
   padding: 0;
@@ -398,9 +405,8 @@ html {
 }
 .newsletter-input {
   background-color:#F2F2F2;
-  flex-grow: 1;
   margin: 0;
-  width: 412px;
+  flex-grow:1;
   font-family: inherit;
   padding: 12px 20px;
   font-size: 18px;
@@ -414,13 +420,14 @@ html {
   line-height: 36px;
   font-weight: 700;
   text-align: center;
+  width:232px;
   padding: 8px 50px;
   color: #ffffff;
   background-color: #82B3D3;;
   text-decoration: none;
   text-transform: uppercase;
   border:none;
-  border-radius: 4px;
+  border-radius: 0 4px 4px 0;
   cursor: pointer;
 }
 .submit-button:hover {
@@ -508,7 +515,250 @@ html {
 .htmlacademy-link:active path {
   fill:rgba(117, 97, 87, 0.3);
 }
-
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.80);
+}
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  border-radius: 30px;
+  background-color: #FFF;
+  box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.15);
+}
+.modal-search {
+  width:577px;
+}
+.modal-close-button {
+  position: absolute;
+  padding: 19px;
+  top: 64px;
+  right: 52px;
+  width: 52px;
+  height: 52px;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.modal-close-button:hover {
+  background-color:#E6E6E6;
+}
+.modal-close-button:focus {
+  background-color:#E6E6E6;
+  outline: 3px solid #83b3d3;
+}
+.modal-close-button:active path {
+  fill: #0000004d;
+}
+.modal-title {
+  margin: 0;
+  margin-bottom: 64px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+.search-form {
+  display:flex;
+  flex-wrap: wrap;
+}
+.search-form .field-group {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 23px;
+}
+.field {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  color: #000000;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.data-field {
+  width:400px;
+  padding: 12px 20px;
+  background-image: url("../images/data.svg") ;
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+}
+.search-label {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+.modal-error {
+  font-size: 16px;
+  line-height: 21px;
+  color: #FF5757;
+  padding: 0 20px;
+  margin-left: 137px;
+  margin-top: 4px;
+}
+.modal-available {
+  font-size: 16px;
+  line-height: 21px;
+  margin-left: 137px;
+  margin-top: 4px;
+  padding: 0 20px;
+}
+.people-number {
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:48px;
+}
+.field::-webkit-outer-spin-button,
+.field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+.people-field {
+  width:11px;
+  padding: 14px 10px;
+  text-align:center;
+  border-radius: 0;
+  line-height: 20px;
+}
+.people-number .search-label {
+  margin-right: 46px;
+  max-width: 95px;
+}
+.field-group-children .search-label {
+  margin-right: 82px;
+}
+.field-group-adult,
+.field-group-children {
+  margin-bottom: 0;
+}
+.number-button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 40px;
+  height: 48px;
+  padding: 14px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #f2f2f2;
+}
+.less {
+  border-radius: 4px 0 0 4px;
+}
+.more {
+  border-radius: 0 4px 4px 0;
+}
+.number-button:hover path {
+  fill: #000;
+  fill-opacity: 1;
+}
+.number-button:focus svg{
+  outline: 3px solid #83b3d3;
+  border-radius: 4px;
+}
+.number-button:active path{
+  fill: #000000;
+  fill-opacity: 0.3;
+}
+.tooltip {
+  position: absolute;
+  margin-left: 59px;
+  margin-top: 1px;
+  width: 26px;
+  height: 26px;
+}
+.tooltip-toggle {
+  border: none;
+  padding: 0;
+  margin: 0;
+  padding:7px 12px;
+  border-radius: 50%;
+  background-color: #83B3D3;
+  display: block;
+  cursor: pointer;
+}
+.tooltip-toggle:hover {
+  opacity: 0.6;
+}
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  color: #FFFFFF;
+  display: block;
+}
+.tooltip-text {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  font-style: normal;
+  padding: 15px 18px 18px 22px;
+  border-radius: 10px;
+  display: block;
+  width: 216px;
+  position: absolute;
+  top: 100%;
+  margin-top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: none;
+}
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+.tooltip-text:after {
+  content:'';
+  background-image: url("../images/triangle-tooltip.svg");
+  width: 19px;
+  height: 9px;
+  position:absolute;
+  bottom: 100%;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal-search-button {
+  width: 100%;
+  border: none;
+  margin: 0;
+  padding: 18px 77px;
+  background-color: #82b3d3;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+}
+.modal-container-close {
+  display: none;
+}
 /*Стили для catalog.html*/
 
 .inner-header {
@@ -588,6 +838,10 @@ html {
   border: none;
   margin-right:70px;
 }
+.hotel-filter-group.price {
+  width: 288px;
+  margin-left: auto;
+}
 .hotel-filter-title {
   font-weight: 700;
   font-size: 20px;
@@ -624,6 +878,9 @@ html {
 }
 .control:active {
   opacity:0.3;
+}
+.control-input:focus + .control-mark {
+  outline: 3px solid #83b3d3;
 }
 .control-input[type="checkbox"]:checked + .control-mark {
   background-image: url("../images/checkbox.svg");
@@ -746,10 +1003,11 @@ html {
   cursor: pointer;
 }
 .filter-button-submit {
+
   background-color: #82B3D3;
-  margin-top:56px;
 }
 .buttons {
+  padding-top:56px;
   display:flex;
   flex-direction:column;
   gap:32px;
@@ -992,9 +1250,8 @@ html {
   padding:0;
   list-style-type: none;
   display:flex;
-  width:1060px;
   gap: 8px;
-  padding-top: 40px;
+  padding-top: 39px;
   border-top: 1px solid #E6E6E6;
 }
 .pagination-item {
@@ -1003,8 +1260,8 @@ html {
 .pagination-link {
   display:block;
   box-sizing: border-box;
-  width:60px;
-  height:60px;
+  min-width:60px;
+  min-height:60px;
   padding:13px 25px;
   font-weight: 700;
   font-size: 20px;
