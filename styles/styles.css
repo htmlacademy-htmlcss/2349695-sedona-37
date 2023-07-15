@@ -838,6 +838,10 @@ html {
   border: none;
   margin-right:70px;
 }
+.hotel-filter-group.price {
+  width: 288px;
+  margin-left: auto;
+}
 .hotel-filter-title {
   font-weight: 700;
   font-size: 20px;
