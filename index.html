@@ -118,7 +118,7 @@
         <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="newsletter-email">Email</label>
-          <input class="newsletter-input" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail">
+          <input class="newsletter-input" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail" required>
           <button class="submit-button" type="submit">Подписаться</button>
         </form>
       </section>
@@ -180,12 +180,12 @@
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="field-group">
                 <label class="search-label" for="check-in">Дата Заезда:</label>
-                <input class="data-field field" type="text" id="check-in" name="check-in" placeholder="Укажите дату заезда" value="27 апреля 2020">
+                <input class="data-field field" type="text" id="check-in" name="check-in" placeholder="Укажите дату заезда" value="27 апреля 2020" required>
               <span class="modal-error">Мы не можем вернуть вас в прошлое.</span>
               </p>
               <p class="field-group">
                 <label class="search-label" for="check-out">Дата Выезда:</label>
-                <input class="data-field field" type="text" id="check-out" name="check-out" placeholder="Укажите дату выезда" value="1 сентября 2023">
+                <input class="data-field field" type="text" id="check-out" name="check-out" placeholder="Укажите дату выезда" value="1 сентября 2023" required>
                 <span class="modal-available">На эти даты есть свободные номера. Пока есть.</span>
               </p>
               <div class="people-number">
