@@ -99,7 +99,8 @@ html {
 
 .nav-link-current {
   text-decoration: underline;
-  text-decoration-color: #756257;
+  -webkit-text-decoration-color: #756257;
+          text-decoration-color: #756257;
   text-decoration-thickness: 2px;
   text-underline-offset: 19px;
   text-underline-position: under;
@@ -127,7 +128,8 @@ html {
 
 .nav-link-current {
   text-decoration: underline;
-  text-decoration-color: #756257;
+  -webkit-text-decoration-color: #756257;
+          text-decoration-color: #756257;
   text-decoration-thickness: 2px;
   text-underline-offset: 19px;
   text-underline-position: under;
@@ -197,7 +199,7 @@ html {
 
 .hero {
   background-image: url("../images/index-background.jpg");
-  background-color: 82B3D3;
+  background-color: #000000;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -1059,7 +1061,8 @@ html {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1155,7 +1158,8 @@ html {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 

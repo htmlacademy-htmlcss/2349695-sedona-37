@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Каталог Седона</title>
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <div class="page-container">
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="main-nav">
         <a class="nav-logo" href="index.html">
           <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона.">
@@ -44,8 +44,8 @@
       </nav>
     </header>
 
-    <main class="main-inner">
-      <header class="inner-header">
+    <main class="main-inner" data-test="main">
+      <header class="inner-header" data-test="filter">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -143,7 +143,7 @@
         </form>
       </header>
 
-      <section class="hotel-cards">
+      <section class="hotel-cards" data-test="catalog">
         <h2 class="visually-hidden">Список гостиниц</h2>
         <div class="hotel-search">
         <p class="hotels-search-text">Найдено гостиниц: 38</p>
@@ -294,8 +294,8 @@
       </section>
     </main>
 
-    <footer class="page-footer">
-      <section class="newsletter-inner">
+    <footer class="page-footer" data-test="footer">
+      <section class="newsletter-inner" data-test="subscribe">
         <h2>Подпишитесь на рассылку</h2>
         <p class="newsletter-description-inner">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
