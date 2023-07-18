@@ -591,6 +591,7 @@ html {
 .contacts-phone:focus {
   outline: 2px solid #000;
   border-radius: 2px;
+  outline: none;
 }
 
 .contacts-phone:active {
@@ -1175,7 +1176,7 @@ html {
   cursor: pointer;
 }
 .range-toggle:hover {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0,));
+  filter: drop-shadow(0px 4px 4px #000);
 }
 .range-toggle:focus {
   outline: 3px solid #83B3D3;
