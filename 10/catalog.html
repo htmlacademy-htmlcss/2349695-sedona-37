@@ -117,11 +117,11 @@
             <div class="range">
               <div class="range-wrapper-inputs">
                 <label class="hotel-filter-label">
-                  <input class="range-input range-input-min" type="number" value="0" name="min-price">
+                  <input class="range-input range-input-min" type="number" value="0" name="min-price" required>
                   <span>от</span>
                 </label>
                 <label class="hotel-filter-label">
-                  <input class="range-input range-input-max" type="number" value="9000" name="max-price">
+                  <input class="range-input range-input-max" type="number" value="9000" name="max-price" required>
                   <span>до</span>
                 </label>
               </div>
@@ -301,7 +301,7 @@
         <p class="newsletter-description-inner">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="newsletter-email">Email</label>
-          <input class="newsletter-input" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail">
+          <input class="newsletter-input" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail" required>
           <button class="submit-button" type="submit">Подписаться</button>
         </form>
       </section>
