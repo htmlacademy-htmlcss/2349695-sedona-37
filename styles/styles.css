@@ -346,6 +346,7 @@ html {
   max-width:505px;
   margin: 0 auto;
   margin-bottom:20px;
+  text-align: center;
 }
 
 .services-description {
@@ -368,7 +369,7 @@ html {
 .services-item {
   box-sizing: border-box;
   width:400px;
-  padding:80px 85px;
+  padding:81px 80px;
 }
 
 .services-item h3 {
@@ -376,15 +377,24 @@ html {
   font-size: 24px;
   line-height: 28px;
   text-align: center;
+  margin: 0 auto;
   text-transform: uppercase;
+  margin-bottom: 25px;
 }
 
 .services-text {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  max-width: 230px;
+  margin: 0 auto;
   margin:0;
   color: #333333;
+}
+.services-icon {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 /* Поиск */
