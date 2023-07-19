@@ -531,7 +531,7 @@ html {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  padding: 47px 70px 30px;
+  padding: 46px 70px 30px;
   align-items: center;
 }
 
@@ -1277,9 +1277,9 @@ html {
   border-radius: 4px;
   border: 2px solid #E5E5E5;
   color: #333;
-  padding: 13px 18px;
+  padding: 12px 18px;
   min-width:292px;
-  margin-right: 68px;
+  margin-right: 67px;
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1309,7 +1309,7 @@ html {
 
 .appearance-item {
   margin-right: 7px;
-  height:44px;
+  height:43px;
   width:46px;
   border-radius: 4px;
   border:2px solid #E5E5E5;
@@ -1320,7 +1320,7 @@ html {
 .appearance-link {
   display:block;
   width: 46px;
-  height: 46px;
+  height: 43px;
 }
 
 .appearance-item:last-child {
@@ -1355,12 +1355,12 @@ html {
   margin:0;
   padding:0;
   list-style-type: none;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   gap:20px;
 }
 
 .hotel-cards-item {
-  padding: 18px;
+  padding: 20px;
   display: grid;
   grid-template-columns: repeat(2, 140px);
   grid-template-rows: 212px 1fr;
