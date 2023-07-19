@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
@@ -76,7 +76,7 @@
           <li class="benefits-item benefits-item-img">
             <img class="benefits-img" src="images/photo-index-2.jpg" width="800" height="385" alt="Красивые виды на красные скалы Седоны.">
             <div class="benefits-column">
-            <h3 class="benefits-title">Там есть <br> мост дьявола</h3>
+            <h3 class="benefits-title">Там есть мост дьявола</h3>
             <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
           </li>
@@ -90,7 +90,7 @@
           <li class="services-item blue">
             <img class="services-icon" src="images/advantage-housing.svg" width="75" height="72" alt="Жильё в Седоне.">
             <h3>Жильё</h3>
-            <p class="services-text">Рекомендуем пожить в&nbsp;настоящем мотеле, <br>всё как в кино!</p>
+            <p class="services-text">Рекомендуем пожить <br> в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="services-item">
             <img class="services-icon" src="images/advantage-food.svg" width="75" height="72" alt="Еда в Седоне.">
@@ -100,7 +100,7 @@
           <li class="services-item blue">
             <img class="services-icon" src="images/advantage-souvenir.svg" width="75" height="72" alt="Сувениры в Седоне.">
             <h3>Сувениры</h3>
-            <p class="services-text">Не только китайского, но&nbsp;и&nbsp;настоящего местного производства!</p>
+            <p class="services-text">Не только китайского, <br> но и настоящего местного производства!</p>
           </li>
         </ul>
       </section>
@@ -118,7 +118,7 @@
         <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="newsletter-email">Email</label>
-          <input class="newsletter-input" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail" required>
+          <input class="newsletter-input" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail">
           <button class="submit-button" type="submit">Подписаться</button>
         </form>
       </section>
@@ -167,8 +167,8 @@
       </section>
     </footer>
 
-      <div class="modal-container modal-container-close">
-        <div class="modal modal-search">
+      <div class="modal-container">
+        <div class="modal modal-search" data-test="modal">
           <button class="modal-close-button" type="button">
             <span class="visually-hidden">Закрыть.</span>
             <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14">
@@ -180,12 +180,12 @@
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="field-group">
                 <label class="search-label" for="check-in">Дата Заезда:</label>
-                <input class="data-field field" type="text" id="check-in" name="check-in" placeholder="Укажите дату заезда" value="27 апреля 2020" required>
-              <span class="modal-error">Мы не можем отправить вас в прошлое.</span>
+                <input class="data-field field" type="text" id="check-in" name="check-in" placeholder="Укажите дату заезда" value="27 апреля 2020">
+              <span class="modal-error">Мы не можем вернуть вас в прошлое.</span>
               </p>
               <p class="field-group">
                 <label class="search-label" for="check-out">Дата Выезда:</label>
-                <input class="data-field field" type="text" id="check-out" name="check-out" placeholder="Укажите дату выезда" value="1 сентября 2023" required>
+                <input class="data-field field" type="text" id="check-out" name="check-out" placeholder="Укажите дату выезда" value="1 сентября 2023">
                 <span class="modal-available">На эти даты есть свободные номера. Пока есть.</span>
               </p>
               <div class="people-number">
