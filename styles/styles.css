@@ -102,14 +102,6 @@ html {
   text-transform: capitalize;
 }
 
-.nav-link-current {
-  text-decoration: underline;
-  text-decoration-color: #756157;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 19px;
-  text-underline-position: under;
-}
-
 .nav-user {
   max-width:300px;
   margin-left: auto;
@@ -126,17 +118,17 @@ html {
   padding: 20px 16px;
  }
 
-.nav-link:hover {
-  opacity: 0.7;
-}
-
 .nav-link-current {
   text-decoration: underline;
   -webkit-text-decoration-color: #756257;
   -moz-text-decoration-color: #756257;
+  text-decoration-color: #756157;
   text-decoration-thickness: 2px;
   text-underline-offset: 19px;
   text-underline-position: under;
+}
+.nav-link:hover {
+  opacity: 0.7;
 }
 
 .nav-user .nav-link {
@@ -367,9 +359,10 @@ html {
 }
 
 .services-item {
+  min-height:385px;
   box-sizing: border-box;
   width:400px;
-  padding:81px 80px;
+  padding:82px 85px;
 }
 
 .services-item h3 {
@@ -379,7 +372,7 @@ html {
   text-align: center;
   margin: 0 auto;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  margin-bottom: 29px;
 }
 
 .services-text {
@@ -392,6 +385,7 @@ html {
   color: #333333;
 }
 .services-icon {
+  height:72px;
   display: block;
   margin: 0 auto;
   margin-bottom: 30px;
