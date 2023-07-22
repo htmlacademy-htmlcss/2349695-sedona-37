@@ -194,12 +194,10 @@ html {
 /* Hero */
 
 .hero {
-  background-image: url("../images/index-background.jpg");
-  background-color: #000000;
-  background-size: cover;
+  background-image: url("../images/flags.svg"),url("../images/index-background.jpg");
+  background-color: #0061a3;
   background-repeat: no-repeat;
-  background-position: center bottom;
-  text-align:center;
+  background-position: center bottom, center;
   padding-top:51px;
   padding-bottom: 82px;
 }
@@ -450,7 +448,7 @@ html {
 
 .newsletter {
   background-image: url("../images/subscribe-background.jpg");
-  background-color: #000000;
+  background-color: #756157;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
@@ -584,7 +582,7 @@ html {
 .contacts-phone:focus {
   outline: 2px solid #000;
   border-radius: 2px;
-  outline: none;
+  color:#756157;
 }
 
 .contacts-phone:active {
@@ -662,6 +660,7 @@ html {
   fill: #0000004d;
 }
 .modal-title {
+  max-width: 500px;
   margin: 0;
   margin-bottom: 64px;
   font-size: 30px;
@@ -915,7 +914,7 @@ html {
 
 .inner-header {
   background-image: url("../images/filter-background.jpg");
-  background-color: #000000;
+  background-color: #756157;
   background-size: cover;
   background-repeat: no-repeat;
   color:#FFFFFF;
@@ -1050,15 +1049,21 @@ html {
   background-color: #FFFFFF;
 }
 
-.control:hover {
+.control:hover .control-input:not(:disabled),
+.control:hover span {
   opacity:0.6;
 }
 
-.control:active {
+.control:active .control-input:not(:disabled),
+.control:active span {
   opacity:0.3;
 }
 
-.control-input:focus + .control-mark {
+.control-input:disabled ~ span {
+  opacity:0.3;
+}
+
+.control-input:focus-visible + .control-mark {
   outline: 3px solid #83b3d3;
 }
 
@@ -1114,7 +1119,6 @@ html {
   color: #000000;
   background-color: #f2f2f2;
   -moz-appearance: textfield;
-
 }
 
 .range-input:hover {
@@ -1390,8 +1394,16 @@ html {
   color: #000000;
 }
 
+.hotel-cards-link:hover {
+  opacity:0.7;
+}
+
+.hotel-cards-link:active {
+  opacity: 0.3;
+}
+
 .hotel-cards-link:focus {
-  outline: 2px solid #000;
+  outline: 2px solid #756157;
   border-radius: 2px;
 }
 
