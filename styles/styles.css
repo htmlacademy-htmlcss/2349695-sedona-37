@@ -1049,20 +1049,22 @@ html {
   background-color: #FFFFFF;
 }
 
-.control:hover {
+.control:hover .control-input:not(:disabled),
+.control:hover span {
   opacity:0.6;
 }
 
-.control:active {
+.control:active .control-input:not(:disabled),
+.control:active span {
   opacity:0.3;
 }
 
-.control-input:focus + .control-mark {
+.control-input:disabled ~ span {
+  opacity:0.3;
+}
+
+.control-input:focus-visible + .control-mark {
   outline: 3px solid #83b3d3;
-}
-
-.control-input:disabled + .control-mark {
-  opacity:0.3;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark {
@@ -1117,7 +1119,6 @@ html {
   color: #000000;
   background-color: #f2f2f2;
   -moz-appearance: textfield;
-
 }
 
 .range-input:hover {
